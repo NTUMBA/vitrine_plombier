@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="icon" href="favicon.ico">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+    </head>
+
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Class wrap starts here============================================= -->
+      <div class="wrap">
+        <!--  header starts here================================================-->
+          <header>
+            <a href="index.html">
+              <h1>Plomberie Victoire</h1>
+              <h4>Certifié RGE Qualibat</h4>
+            </a>
+            <nav>
+              <ul>
+                <li><a href="index.html" class="selected">Accueil</a></li>
+                <li><a href="a_propos.html">A propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="formulaire.html">Formulaire</a></li>
+              </ul>
+            </nav>
+          </header>
+        <!--  Header finish here================================================-->
+        <!--  section starts here===============================================-->
+        <section>
+          <h2>Devis gratuit sans surprise &amp;intervention express dans une heure max</h2>
+          <form action="index.html" method="post">
+            <!--  action's attribute, web adress of a process; method, http method to browser to submit and pot value is  for communication with server -->
+            <fieldset>
+              <legend><span class="number">1</span>Identité</legend>
+                <label for="name">Nom:</label>
+                <input type="text" id="name"name="Nom du client"><br>
+                <!--  input, common and versatile element; type attribute indicate the kind of input (email, tel, press,ect.);
+                 id is not requiered but target element with css and js files, hereit will associate label to specific form controls
+                name's attributewhen a form is submitted to server, it will be able to understand the form and then process the value appropriatly-->
+                <label for="last_name">Prénom:</label>
+                <input type="text" id="last_name"name="Nom du client"><br>
+
+                <label for="mail">Email:</label>
+                <input type="email" id="mail" name="email du client"><br>
+                <label>Ville:</label>
+                <input type="radio" id="toucoing" value="tourcoing" name="ville du client"><label for="tourcoing">Tourcoing</label><br>
+                <input type="radio" id="roubaix" value="roubaix" name="ville du client"><label for="roubaix">Roubaix</label><br>
+                <input type="radio" id="wattrelos" value="wattrelos" name="ville du client"><label for="wattrelos">Wattrelos</label><br>
+                <input type="radio" id="croix" value="croix" name="ville du client"><label for="croix">Croix</label><br>
+                <input type="radio" id="wasquehal" value="wasquehal" name="ville du client"><label for="wasquehal">Wasquehal</label><br>
+                <!-- radio type allows only one selection -->
+
+            </fieldset>
+
+
+            <fieldset>
+              <legend><span class="number">2</span>Interventions</legend>
+                <label for="sinistre">Sinistre:</label>
+                <textarea id="Incident" name="Reparations"></textarea>
+                <!--  This element allows user to write multiple lines text and he could resize it a volo-->
+            </fieldset>
+            <label for="depannage">Dépannage</label>
+            <select id="depannage" name="sinistre_client">
+              <!--  select element allows user to pick set of predefined options-->
+              <optgroup label="sanitaires">
+                <option value="fuite">fuite d'eau</option>
+                <option value="materiaux">robinnet</option>
+                <option value="evacuations">chasse d'eau</option>
+              </optgroup>
+
+              <optgroup label="cuisine">
+                <option value="fuite">fuite d'eau</option>
+                <option value="debouchage">évacuations</option>
+                <option value="gaz">chauffage</option>
+              </optgroup>
+
+              <optgroup label="piscine">
+                <option value="fuite">fuite d'eau</option>
+                <option value="debouchage">évacuations</option>
+                <option value="gaz">chauffage</option>
+              </optgroup>
+
+            </select>
+            <label>Mode de payement</label>
+            <input type="checkbox" id="cheque" value="cheque" name="mode_de_payement"><label class="light"for="cheque">Chèque</label>
+            <input type="checkbox" id="carte_bleu" value="carte_bleu" name="mode_de_payement"><label class="light"for="carte_beu">Carte bleu</label>
+            <input type="checkbox" id="net" value="net" name="mode_de_payement"><label class="light"for="net">Internet</label>
+            <input type="checkbox" id="increments" value="increments" name="mode_de_payement"><label class="light"for="increments">Par tranche</label>
+            <!--checkbox allows to select more then 1 option, for instance user can choose the first and the last one  -->
+
+            <button type="submit"></button>
+            <!--  Other values for type are: reset (automatically clear our form data when is clicked) and button (in combination with js)-->
+          </form>
+        </section>
+        <!--  section finish here===============================================-->
+      </div>
+        <!--  Class wrap finish here============================================-->
+        <!--  footer strats here================================================-->
+        <footer>
+          <a href"img/twit.png"><img src="img/twit.png" alt="logo twitter"></a>
+          <p>&copy; 2016 Simon Mboma</p>
+
+        </footer>
+        <!--  footer finish here================================================-->
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+
+</html>
