@@ -28,16 +28,15 @@
       <div class="wrap">
         <!--  header starts here================================================-->
           <header>
-            <a href="index.html">
-              <h1>Plomberie Victoire</h1>
-              <h4>Certifié RGE Qualibat</h4>
-            </a>
+            <h1>Plomberie Victoire</h1>
             <nav>
               <ul>
                 <li><a href="index.html" class="selected">Accueil</a></li>
                 <li><a href="a_propos.html">A propos</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="formulaire.html">Formulaire</a></li>
+                <li><a href="index.html" class="selected">Mention légale</a></li>
+                <li><a href="Vitrine_Plombier/img/certificat.png"><img src="img/certificat.png" alt="certificat RGE Qualibat"></a></li>
               </ul>
             </nav>
           </header>
@@ -48,7 +47,7 @@
           <form action="index.html" method="post">
             <!--  action's attribute, web adress of a process; method, http method to browser to submit and pot value is  for communication with server -->
             <fieldset>
-              <legend><span class="number">1. </span>Identité</legend>
+              <legend><span class="number">1. </span>Coordonnées</legend>
                 <label for="name">Nom:</label>
                 <input type="text" id="name"name="Nom du client"><br>
                 <!--  input, common and versatile element; type attribute indicate the kind of input (email, tel, press,ect.);
@@ -56,7 +55,8 @@
                 name's attributewhen a form is submitted to server, it will be able to understand the form and then process the value appropriatly-->
                 <label for="last_name">Prénom:</label>
                 <input type="text" id="last_name"name="Nom du client"><br>
-
+                <label for="tel">Téléphone:</label>
+                <input type="text" id="tel" name="Numero_de_telephne_du_client"><br>
                 <label for="mail">Email:</label>
                 <input type="email" id="mail" name="email du client"><br>
                 <label>Ville:</label><br>
@@ -72,7 +72,7 @@
 
             <fieldset>
               <legend><span class="number">2. </span>Interventions</legend>
-                <label for="sinistre">Sinistre:</label>
+                <label for="sinistre">Sinistre:</label><br>
                 <textarea id="Incident" name="Reparations"></textarea>
                 <!--  This element allows user to write multiple lines text and he could resize it a volo-->
             </fieldset>
@@ -96,16 +96,17 @@
                 <option value="debouchage">évacuations</option>
                 <option value="gaz">chauffage</option>
               </optgroup>
-
-            </select>
-            <label>Mode de payement</label>
+            </select> <br>
+            <fieldset>
+            <legend><span class="number">3. </span>Règlement</legend>
+            <label>Mode de payement</label><br>
             <input type="checkbox" id="cheque" value="cheque" name="mode_de_payement"><label class="light"for="cheque">Chèque</label>
             <input type="checkbox" id="carte_bleu" value="carte_bleu" name="mode_de_payement"><label class="light"for="carte_beu">Carte bleu</label>
             <input type="checkbox" id="net" value="net" name="mode_de_payement"><label class="light"for="net">Internet</label>
             <input type="checkbox" id="increments" value="increments" name="mode_de_payement"><label class="light"for="increments">Par tranche</label><br>
             <!--checkbox allows to select more then 1 option, for instance user can choose the first and the last one  -->
-
-            <button type="submit">Sign Up</button>
+            </fieldset>
+            <button type="submit">Valider vos informations</button>
             <!--  Other values for type are: reset (automatically clear our form data when is clicked) and button (in combination with js)-->
           </form>
         </section>
@@ -114,9 +115,15 @@
         <!--  Class wrap finish here============================================-->
         <!--  footer strats here================================================-->
         <footer>
-          <a href"img/twit.png"><img src="img/twit.png" alt="logo twitter"></a>
-          <p>&copy; 2016 Simon Mboma</p>
-
+          <p>ACTIVIT&Eacute;S</p>
+          <ul>
+            <li>Plomberie de la Victoire</a></li>
+            <li>Remplacement ballon</a></li>
+            <li>Pompe à chaleur</a></li>
+            <li>Raccordement gaz</a></li>
+            <li>Entretien et remplacement</li>
+          </ul>
+            <p>&copy; 2016 Simon Mboma</p>
         </footer>
         <!--  footer finish here================================================-->
 
