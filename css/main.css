@@ -96,12 +96,28 @@ textarea {
    ========================================================================== */
 /*index file===================================================================*/
 .navbar {
-  margin-bottom: 2.5rem;
+  /*margin-bottom: 2.5rem;*/
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 nav{
   width:100%;
 }
+nav .certificat{
+  width: 1rem;
+  margin-top: 0;
+}
+/*flexbox=======================================================================*/
+nav,footer ul{
+  display: flex;
+  justify-content: space-around;
+
+}
+nav,ul{
+  flex-grow: 1;
+}
+/*pseudo classes================================================================*/
 a:hover{
   text-align: justify;
   font-size: 30px;
@@ -124,8 +140,12 @@ a:hover{
 One line is ok but putting more you have more effect, and it applied front to back:fisrt values defined is the first line.*/
 
 
-li,a{
+p,li,a{
   font-size: 1.2rem;
+}
+li{
+  list-style: none;
+    color: mediumvioletred;
 }
 a{
     color: orangered;
@@ -138,11 +158,20 @@ section,.container{
   text-align: center;
   color:mediumvioletred;
     Width:80%;
+    text-align: center;
 }
+.size{
+  font-size: 3rem;
+  font-weight: bold;
+  color: yellow;
+}
+footer .flash{
+  color:royalblue;
+}
+
 .slogan{
   font-family: Lucida,Arial,sans-serif;
   font-size: 2.5rem;
-  font-weight: bold;
 }
 #bgvid {
    position: absolute;
@@ -156,26 +185,17 @@ section,.container{
    background-size: cover;
 
 }
-.container{
-  text-align: center;
+
+.container .avatar{
+  border-radius: 20%;
+  width: 40%;
+
 }
 footer{
   margin-top: 0;
   background-color: #f3f3f3;
 }
-li{
-  list-style: none;
-    color: mediumvioletred;
-}
 
-/*flexbox=======================================================================*/
-nav,ul{
-  display: flex;
-  justify-content: space-around;
-}
-ul li{
-  flex-grow: 1;
-}
 
 
 
