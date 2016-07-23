@@ -101,15 +101,17 @@ textarea {
 }
 li,a{
   font-size: 1.5rem;
-  color: orange;
 }
+a{
+    color: orangered;
+}
+
 section{
   text-align: center;
-  /*color: #fff;*/
+  color:mediumvioletred;
     Width:80%;
     margin: 0 auto;
     font-weight: bold;
-    /*color: #fff;*/
 }
 .slogan{
   font-family: Lucida,Arial,sans-serif;
@@ -133,6 +135,7 @@ footer{
 }
 li{
   list-style: none;
+    color: mediumvioletred;
 }
 
 /*flexbox=======================================================================*/
