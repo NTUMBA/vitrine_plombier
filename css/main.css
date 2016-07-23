@@ -95,25 +95,26 @@ textarea {
    Author's custom styles
    ========================================================================== */
 /*index file===================================================================*/
-.section{
-  Width:80%;
-  margin: 0 auto;
-  font-weight: bold;
-  color: #fff;
+.space{
+  padding: 10px 30px;
+  color:green;
 }
-.invitation{
-  margin-top: 10%;
+li,a{
+  font-size: 1.5rem;
+  color: orange;
+}
+section{
   text-align: center;
-  color: #fff;
+  /*color: #fff;*/
+    Width:80%;
+    margin: 0 auto;
+    font-weight: bold;
+    /*color: #fff;*/
 }
 .slogan{
   font-family: Lucida,Arial,sans-serif;
   font-size: 2rem;
   font-weight: bold;
-}
-.play{
-  border: 1px solid white;
-  border-radius: 100%;
 }
 #bgvid {
    position: absolute;
@@ -130,6 +131,20 @@ textarea {
 footer{
   background-color: #f3f3f3;
 }
+li{
+  list-style: none;
+}
+
+/*flexbox=======================================================================*/
+ul{
+  display: flex;
+  justify-content: space-around;
+}
+ul li{
+  flex-grow: 1;
+}
+
+
 
 
 /* ##################################################################### */
