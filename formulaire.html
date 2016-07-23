@@ -37,6 +37,7 @@
                       <li class="nav-item"><a class="nav-link" href="formulaire.html">Formulaire<span class="sr-only">(current)</span></a></li>
                       <li class="nav-item"><a class="nav-link" href="mention.html">Mention légale</a></li>
                   </ul>
+                  <p>Cliquer sur les mots de couleur orange foncé pour changer de page</p>
 
                   <li><a class="navbar-brand pull-sm-left m-r-0 hidden-xs-down" href="Vitrine_Plombier/img/certificat.png" class="certificat"><img src="img/certificat.png" alt="certificat RGE Qualibat"></a></li>
 
@@ -45,73 +46,81 @@
         <!--  Header finish here================================================-->
         <!--  section starts here===============================================-->
         <section>
-          <h1 class="size">Plomberie Victoire</h1>
-          <h2>Devis gratuit sans surprise &amp; intervention express dans une heure max</h2>
-          <form action="index.html" method="post">
-            <!--  action's attribute, web adress of a process; method, http method to browser to submit and pot value is  for communication with server -->
-            <fieldset>
-              <legend><span class="number">1. </span>Coordonnées</legend>
-                <label for="name">Nom:</label>
-                <input type="text" id="name"name="Nom du client"><br>
-                <!--  input, common and versatile element; type attribute indicate the kind of input (email, tel, press,ect.);
-                 id is not requiered but target element with css and js files, hereit will associate label to specific form controls
-                name's attributewhen a form is submitted to server, it will be able to understand the form and then process the value appropriatly-->
-                <label for="last_name">Prénom:</label>
-                <input type="text" id="last_name"name="Nom du client"><br>
-                <label for="tel">Téléphone:</label>
-                <input type="text" id="tel" name="Numero_de_telephne_du_client"><br>
-                <label for="mail">Email:</label>
-                <input type="email" id="mail" name="email du client"><br>
-                <label>Ville:</label><br>
-                <input type="radio" id="tourcoing" value="tourcoing" name="ville du client"><label for="tourcoing">Tourcoing</label><br>
-                <input type="radio" id="roubaix" value="roubaix" name="ville du client"><label for="roubaix">Roubaix</label><br>
-                <input type="radio" id="wattrelos" value="wattrelos" name="ville du client"><label for="wattrelos">Wattrelos</label><br>
-                <input type="radio" id="croix" value="croix" name="ville du client"><label for="croix">Croix</label><br>
-                <input type="radio" id="wasquehal" value="wasquehal" name="ville du client"><label for="wasquehal">Wasquehal</label><br>
-                <!-- radio type allows only one selection -->
+          <main class="info">
+            <h1 class="size">Plomberie Victoire</h1>
+            <h2>Devis gratuit sans surprise &amp; intervention express dans une heure maximum</h2>
+            <p>Cliquer sur dans les petits rectangles pour les remplir</p>
+            <form action="index.html" method="post">
+              <!--  action's attribute, web adress of a process; method, http method to browser to submit and pot value is  for communication with server -->
+              <fieldset>
+                <legend><span class="number">1. </span>Coordonnées</legend>
+                  <label for="name">Nom:</label>
+                  <input type="text" id="name"name="Nom du client"><br>
+                  <!--  input, common and versatile element; type attribute indicate the kind of input (email, tel, press,ect.);
+                   id is not requiered but target element with css and js files, hereit will associate label to specific form controls
+                  name's attributewhen a form is submitted to server, it will be able to understand the form and then process the value appropriatly-->
+                  <label for="last_name">Prénom:</label>
+                  <input type="text" id="last_name"name="Nom du client"><br>
+                  <label for="tel">Téléphone:</label>
+                  <input type="text" id="tel" name="Numero_de_telephne_du_client"><br>
+                  <label for="mail">Email:</label>
+                  <input type="email" id="mail" name="email du client"><br>
+                  <label>Ville:</label><br>
+                  <p>Cliquer dans un des petits cercles</p>
+                  <input type="radio" id="tourcoing" value="tourcoing" name="ville du client"><label for="tourcoing">Tourcoing</label><br>
+                  <input type="radio" id="roubaix" value="roubaix" name="ville du client"><label for="roubaix">Roubaix</label><br>
+                  <input type="radio" id="wattrelos" value="wattrelos" name="ville du client"><label for="wattrelos">Wattrelos</label><br>
+                  <input type="radio" id="croix" value="croix" name="ville du client"><label for="croix">Croix</label><br>
+                  <input type="radio" id="wasquehal" value="wasquehal" name="ville du client"><label for="wasquehal">Wasquehal</label><br>
+                  <!-- radio type allows only one selection -->
 
-            </fieldset>
+              </fieldset>
 
 
-            <fieldset>
-              <legend><span class="number">2. </span>Interventions</legend>
-                <label for="sinistre">Sinistre:</label><br>
-                <textarea id="Incident" name="Reparations"></textarea>
-                <!--  This element allows user to write multiple lines text and he could resize it a volo-->
-            </fieldset>
-            <label for="depannage">Dépannage</label>
-            <select id="depannage" name="sinistre_client">
-              <!--  select element allows user to pick set of predefined options-->
-              <optgroup label="sanitaires">
-                <option value="fuite">fuite d'eau</option>
-                <option value="materiaux">robinnet</option>
-                <option value="evacuations">chasse d'eau</option>
-              </optgroup>
+              <fieldset>
+                <legend><span class="number">2. </span>Interventions</legend>
+                  <label for="sinistre">Sinistre:</label><br>
+                  <p>Cliquer dans le rectangle, vous pouvez donner plus de précision à propos de l'incident</p>
+                  <textarea id="Incident" name="Reparations"></textarea>
+                  <!--  This element allows user to write multiple lines text and he could resize it a volo-->
+              </fieldset>
+              <label for="depannage">Dépannage</label>
+              <p>Cliquer sur la petite flèche pour retrouver le nom technique du sinistre</p>
+              <select id="depannage" name="sinistre_client">
+                <!--  select element allows user to pick set of predefined options-->
+                <optgroup label="sanitaires">
+                  <option value="fuite">fuite d'eau</option>
+                  <option value="materiaux">robinnet</option>
+                  <option value="evacuations">chasse d'eau</option>
+                </optgroup>
 
-              <optgroup label="cuisine">
-                <option value="fuite">fuite d'eau</option>
-                <option value="debouchage">évacuations</option>
-                <option value="gaz">chauffage</option>
-              </optgroup>
+                <optgroup label="cuisine">
+                  <option value="fuite">fuite d'eau</option>
+                  <option value="debouchage">évacuations</option>
+                  <option value="gaz">chauffage</option>
+                </optgroup>
 
-              <optgroup label="piscine">
-                <option value="fuite">fuite d'eau</option>
-                <option value="debouchage">évacuations</option>
-                <option value="gaz">chauffage</option>
-              </optgroup>
-            </select> <br>
-            <fieldset>
-            <legend><span class="number">3. </span>Règlement</legend>
-            <label>Mode de payement</label><br>
-            <input type="checkbox" id="cheque" value="cheque" name="mode_de_payement"><label class="light"for="cheque">Chèque</label>
-            <input type="checkbox" id="carte_bleu" value="carte_bleu" name="mode_de_payement"><label class="light"for="carte_beu">Carte bleu</label>
-            <input type="checkbox" id="net" value="net" name="mode_de_payement"><label class="light"for="net">Internet</label>
-            <input type="checkbox" id="increments" value="increments" name="mode_de_payement"><label class="light"for="increments">Par tranche</label><br>
-            <!--checkbox allows to select more then 1 option, for instance user can choose the first and the last one  -->
-            </fieldset>
-            <button type="submit">Valider vos informations</button>
-            <!--  Other values for type are: reset (automatically clear our form data when is clicked) and button (in combination with js)-->
-          </form>
+                <optgroup label="piscine">
+                  <option value="fuite">fuite d'eau</option>
+                  <option value="debouchage">évacuations</option>
+                  <option value="gaz">chauffage</option>
+                </optgroup>
+              </select> <br>
+              <fieldset>
+              <legend><span class="number">3. </span>Règlement</legend>
+              <label>Mode de payement</label><br>
+              <p>Ici vous avez la posiibilité de choisir plusieurs options en cliquant sur les cercles</p>
+              <input type="checkbox" id="cheque" value="cheque" name="mode_de_payement"><label class="light"for="cheque">Chèque</label>
+              <input type="checkbox" id="carte_bleu" value="carte_bleu" name="mode_de_payement"><label class="light"for="carte_beu">Carte bleu</label>
+              <input type="checkbox" id="net" value="net" name="mode_de_payement"><label class="light"for="net">Internet</label>
+              <input type="checkbox" id="increments" value="increments" name="mode_de_payement"><label class="light"for="increments">Par tranche</label><br>
+              <!--checkbox allows to select more then 1 option, for instance user can choose the first and the last one  -->
+              </fieldset>
+              <button type="submit" class="button">Valider vos informations</button>
+              <!--  Other values for type are: reset (automatically clear our form data when is clicked) and button (in combination with js)-->
+            </form>
+          </main>
+
         </section>
         <!--  section finish here===============================================-->
       </div>
