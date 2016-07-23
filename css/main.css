@@ -95,12 +95,34 @@ textarea {
    Author's custom styles
    ========================================================================== */
 /*index file===================================================================*/
+a:hover{
+  text-align: justify;
+  font-size: 70px;
+  color: gold;
+  padding-bottom: 40px;
+  padding-left: 17%;
+  text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}/*First line: 0=right shadow, 1=bottom,0=bluring and #ccc=color (the last 2 are optional parameters).
+One line is ok but putting more you have more effect, and it applied front to back:fisrt values defined is the first line.*/
+
+
 .space{
   padding: 10px 30px;
   color:green;
 }
 li,a{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 a{
     color: orangered;
