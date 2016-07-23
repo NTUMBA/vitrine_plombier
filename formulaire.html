@@ -88,16 +88,17 @@
               <p>Cliquer sur la petite flèche pour retrouver le nom technique du sinistre</p>
               <select id="depannage" name="sinistre_client">
                 <!--  select element allows user to pick set of predefined options-->
-                <optgroup label="sanitaires">
-                  <option value="fuite">fuite d'eau</option>
-                  <option value="materiaux">robinnet</option>
-                  <option value="evacuations">chasse d'eau</option>
-                </optgroup>
-
                 <optgroup label="cuisine">
                   <option value="fuite">fuite d'eau</option>
                   <option value="debouchage">évacuations</option>
-                  <option value="gaz">chauffage</option>
+                  <option value="gaz">gazinière</option>
+                </optgroup>
+
+                <optgroup label="gaz">
+                  <option value="fuite">fuite</option>
+                  <option value="debouchage">raccordement</option>
+                  <option value="gaz">pompe à chaleur</option>
+                  <option value="gaz">remplacement ballon</option>
                 </optgroup>
 
                 <optgroup label="piscine">
@@ -105,7 +106,14 @@
                   <option value="debouchage">évacuations</option>
                   <option value="gaz">chauffage</option>
                 </optgroup>
+                <optgroup label="sanitaires">
+                  <option value="fuite">fuite d'eau</option>
+                  <option value="materiaux">robinnet</option>
+                  <option value="evacuations">chasse d'eau</option>
+                </optgroup>
+
               </select> <br>
+
               <fieldset>
               <legend><span class="number">3. </span>Règlement</legend>
               <label>Mode de payement</label><br>
