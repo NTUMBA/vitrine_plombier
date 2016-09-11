@@ -1,201 +1,192 @@
 <!DOCTYPE html>
-<html class="no-js" lang="fr">
+<html class="no-js" lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>Vitrine du Plombier</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+      <!-- Place favicon.ico in the root directory -->
+      <link rel="icon" href="img/favicon.ico">
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/main.css">
+      <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+  </head>
+  <body>
+      <!--[if lt IE 8]>
+          <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Vitrine du Plombier</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Class wrap starts here============================================= -->
+  <div class="wrap plumb-head">
+    <!--  header starts here================================================-->
+    <header>
+      <nav class="navbar navbar-dark">
+        <ul>
+          <li>Plomberie de la Victoire</li>
+          <li>Téléphone:  03 62 55 26 30</li>
+          <li><img src="img/rsz_certificat.jpg" alt="certificat RGE Qualibat" class=" pull-sm-left m-r-0 hidden-xs-down"></li>
+        </ul>
+        <ul>
+            <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+            <li class="nav-item"><a class="nav-link" href="a_propos.html">A propos</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--  Header finish here================================================-->
+    <div class="wrapper">
+      <!--  section starts here===============================================-->
+      <section>
+        <main class="info">
+        <h1 class="title_teint">Plomberie Victoire</h1>
+        <h2>Devis gratuit sans surprise &amp; intervention express dans une heure maximum</h2>
+        <form action="index.html" method="post">
+          <!--  action's attribute, web adress of a process; method, http method to browser to submit and post value is  for communication with server -->
+          <div class="row limite">
+            <fieldset>
+              <div class="col-sm-6 col-md-3">
+                <legend><span class="number">1. </span>Coordonnées</legend>
+                <h5>Cliquer dans les petits rectangles pour les remplir et dans les cercles pour cocher vos réponses</h5>
+              </div>
+              <div class="col-sm-6 col-dm-3">
+                <label for="name">Nom:</label>
+                <input type="text" id="name"name="Nom du client"><br>
+                <!--  input, common and versatile element; type attribute indicate the kind of input (email, tel, press,ect.);
+                 id is not requiered but target element with css and js files, hereit will associate label to specific form controls
+                name's attributewhen a form is submitted to server, it will be able to understand the form and then process the value appropriatly-->
+                <label for="last_name">Prénom:</label>
+                <input type="text" id="last_name"name="Nom du client">
+                <label for="tel">Téléphone:</label>
+                <input type="text" id="tel" name="Numero_de_telephne_du_client"><br>
+                <label for="mail">Email:</label>
+                <input type="email" id="mail" name="email du client">
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <label>Ville</label><br>
+                <br><input type="radio" id="tourcoing" value="tourcoing" name="ville du client"><label for="tourcoing">Tourcoing</label>
+                <br><input type="radio" id="roubaix" value="roubaix" name="ville du client"><label for="roubaix">Roubaix</label>
+                <br><input type="radio" id="wattrelos" value="wattrelos" name="ville du client"><label for="wattrelos">Wattrelos</label>
+                <br><input type="radio" id="croix" value="croix" name="ville du client"><label for="croix">Croix</label>
+                <br><input type="radio" id="wasquehal" value="wasquehal" name="ville du client"><label for="wasquehal">Wasquehal</label>
+                <!-- radio type allows only one selection -->
+              </div>
+            </fieldset>
+          </div>
+          <div class="row limite">
+            <fieldset>
+              <div class="col-sm-6 col-md-4">
+                <legend><span class="number">2. </span>Interventions</legend>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <label for="sinistre">Sinistre:</label><br>
+                <h5>Cliquer dans le rectangle, vous pouvez donner plus de précision à propos de l'incident</h5>
+                <textarea id="Incident" name="Reparations"></textarea>
+                <!--  This element allows user to write multiple lines text and he could resize it a volo-->
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <label for="depannage">Dépannage</label>
+                <h5>Cliquer sur la petite flèche pour retrouver le nom technique du sinistre</h5>
+                <select id="depannage" name="sinistre_client">
+                  <!--  select element allows user to pick set of predefined options-->
+                  <optgroup label="cuisine">
+                    <option value="fuite">fuite d'eau</option>
+                    <option value="debouchage">évacuations</option>
+                    <option value="gaz">gazinière</option>
+                  </optgroup>
 
-        <!-- Place favicon.ico in the root directory -->
-        <link rel="icon" href="img/favicon.ico">
+                  <optgroup label="gaz">
+                    <option value="fuite">fuite</option>
+                    <option value="debouchage">raccordement</option>
+                    <option value="gaz">pompe à chaleur</option>
+                    <option value="gaz">remplacement ballon</option>
+                  </optgroup>
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-        <script src="js/bootstrap.js"></script>
-    </head>
-
-    <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-        <!-- Class wrap starts here============================================= -->
-      <div class="wrap">
-        <!--  header starts here================================================-->
-        <header>
-
-          <nav class="navbar navbar-dark">
-                  <ul class="nav navbar-nav flash">
-                      <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-                      <li class="nav-item"><a class="nav-link" href="a_propos.html">A propos</a></li>
-                      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                      <li class="nav-item"><a class="nav-link" href="formulaire.html">Formulaire<span class="sr-only">(current)</span></a></li>
-                      <li class="nav-item"><a class="nav-link" href="mention.html">Mention légale</a></li>
-                  </ul>
-                  <a class="navbar-brand pull-sm-left m-r-0 hidden-xs-down" href="Vitrine_Plombier/img/certificat.png" class="certificat"><img src="img/certificat.png" alt="certificat RGE Qualibat"></a>
-
-          </nav>
-        </header>
-        <!--  Header finish here================================================-->
-        <!--  section starts here===============================================-->
-        <section>
-                  <p>Cliquer sur les mots de couleur orange foncé ci-dessus pour naviguer</p>
-          <main class="info">
-
-          <h1 class="title_teint">Plomberie Victoire</h1>
-          <h2>Devis gratuit sans surprise &amp; intervention express dans une heure maximum</h2>
-          <form action="index.html" method="post">
-            <!--  action's attribute, web adress of a process; method, http method to browser to submit and pot value is  for communication with server -->
-
-
-            <div class="row limite">
-              <fieldset>
-                  <div class="col-sm-6 col-md-3">
-                    <legend><span class="number">1. </span>Coordonnées</legend>
-                    <h5>Cliquer dans les petits rectangles pour les remplir et dans les cercles pour cocher vos réponses</h5>
-
-                  </div>
-                  <div class="col-sm-6 col-dm-3">
-                    <label for="name">Nom:</label>
-                    <input type="text" id="name"name="Nom du client"><br>
-                    <!--  input, common and versatile element; type attribute indicate the kind of input (email, tel, press,ect.);
-                     id is not requiered but target element with css and js files, hereit will associate label to specific form controls
-                    name's attributewhen a form is submitted to server, it will be able to understand the form and then process the value appropriatly-->
-                    <label for="last_name">Prénom:</label>
-                    <input type="text" id="last_name"name="Nom du client">
-                    <label for="tel">Téléphone:</label>
-                    <input type="text" id="tel" name="Numero_de_telephne_du_client"><br>
-                    <label for="mail">Email:</label>
-                    <input type="email" id="mail" name="email du client">
-                  </div>
-
-                  <div class="col-sm-6 col-md-3">
-                    <label>Ville</label><br>
-                    <label for="tourcoing">Tourcoing</label><input type="radio" id="tourcoing" value="tourcoing" name="ville du client"><br>
-                    <label for="roubaix">Roubaix</label><input type="radio" id="roubaix" value="roubaix" name="ville du client"><br>
-                    <label for="wattrelos">Wattrelos</label><input type="radio" id="wattrelos" value="wattrelos" name="ville du client"><br>
-                    <label for="croix">Croix</label><input type="radio" id="croix" value="croix" name="ville du client"><br>
-                    <label for="wasquehal">Wasquehal</label><input type="radio" id="wasquehal" value="wasquehal" name="ville du client"><br>
-                    <!-- radio type allows only one selection -->
-                  </div>
-              </fieldset>
-            </div>
-            <div class="row limite">
-              <fieldset>
-                        <div class="col-sm-6 col-md-4">
-                          <legend><span class="number">2. </span>Interventions</legend>
-                        </div>
-                        <div class="col-sm-6 col-md-4">
-                                <label for="sinistre">Sinistre:</label><br>
-                                <h5>Cliquer dans le rectangle, vous pouvez donner plus de précision à propos de l'incident</h5>
-                                <textarea id="Incident" name="Reparations"></textarea>
-                                <!--  This element allows user to write multiple lines text and he could resize it a volo-->
-                        </div>
-                        <div class="col-sm-6 col-md-4">
-                                <label for="depannage">Dépannage</label>
-                                <h5>Cliquer sur la petite flèche pour retrouver le nom technique du sinistre</h5>
-                                <select id="depannage" name="sinistre_client">
-                                  <!--  select element allows user to pick set of predefined options-->
-                                  <optgroup label="cuisine">
-                                    <option value="fuite">fuite d'eau</option>
-                                    <option value="debouchage">évacuations</option>
-                                    <option value="gaz">gazinière</option>
-                                  </optgroup>
-
-                                  <optgroup label="gaz">
-                                    <option value="fuite">fuite</option>
-                                    <option value="debouchage">raccordement</option>
-                                    <option value="gaz">pompe à chaleur</option>
-                                    <option value="gaz">remplacement ballon</option>
-                                  </optgroup>
-
-                                  <optgroup label="piscine">
-                                    <option value="fuite">fuite d'eau</option>
-                                    <option value="debouchage">évacuations</option>
-                                    <option value="gaz">chauffage</option>
-                                  </optgroup>
-                                  <optgroup label="sanitaires">
-                                    <option value="fuite">fuite d'eau</option>
-                                    <option value="materiaux">robinnet</option>
-                                    <option value="evacuations">chasse d'eau</option>
-                                  </optgroup>
-
-                                </select> <br>
-                        </div>
-              </fieldset>
-            </div>
-
-            <div class="row limite">
-              <fieldset>
-                        <div class="col-sm-6 col-md-4">
-                                <legend><span class="number">3. </span>Règlement</legend>
-                        </div>
-                        <div class="col-xs-6 col-sm-4">
-                                <label>Mode de payement</label><br>
-                                <h5>Ici vous avez à votre disposition plusieurs options à combiner (le cas échéant) en cliquant sur les cases</h5>
-                        </div>
-                        <div class="col-sm-6 col-md-4">
-                          <input type="checkbox" id="cheque" value="cheque" name="mode_de_payement"><label class="light"for="cheque">Chèque</label>
-                          <input type="checkbox" id="carte_bleu" value="carte_bleu" name="mode_de_payement"><label class="light"for="carte_beu">Carte bleu</label>
-                          <input type="checkbox" id="net" value="net" name="mode_de_payement"><label class="light"for="net">Internet</label>
-                          <input type="checkbox" id="increments" value="increments" name="mode_de_payement"><label class="light"for="increments">Par tranche</label><br>
-                          <!--checkbox allows to select more then 1 option, for instance user can choose the first and the last one  -->
-                        </div>
-              </fieldset>
-            </div>
-              <button type="submit" class="button">Valider vos informations</button>
-              <!--  Other values for type are: reset (automatically clear our form data when is clicked) and button (in combination with js)-->
-          </form>
-          </main>
-
-        </section>
-        <!--  section finish here===============================================-->
-      </div>
-        <!--  Class wrap finish here============================================-->
-        <!--  footer strats here================================================-->
-        <footer>
-          <h2 class="flash">ACTIVIT&Eacute;S</h2>
-          <ul>
-            <li>Plomberie de la Victoire</a></li>
-            <li>Téléphone: 03 62 55 26 30</li>
-            <li>Remplacement ballon</a></li>
-            <li>Pompe à chaleur</a></li>
-            <li>Raccordement gaz</a></li>
-            <li>Entretien et remplacement</li>
-          </ul>
-            <p class="flash">&copy; 2016 Simon Mboma</p>
-        </footer>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script>
-            window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')
-        </script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b, o, i, l, e, r) {
-                b.GoogleAnalyticsObject = l;
-                b[l] || (b[l] =
-                    function() {
-                        (b[l].q = b[l].q || []).push(arguments)
-                    });
-                b[l].l = +new Date;
-                e = o.createElement(i);
-                r = o.getElementsByTagName(i)[0];
-                e.src = 'https://www.google-analytics.com/analytics.js';
-                r.parentNode.insertBefore(e, r)
-            }(window, document, 'script', 'ga'));
-            ga('create', 'UA-XXXXX-X', 'auto');
-            ga('send', 'pageview');
-        </script>
-    </body>
-
-    </html>
+                  <optgroup label="piscine">
+                    <option value="fuite">fuite d'eau</option>
+                    <option value="debouchage">évacuations</option>
+                    <option value="gaz">chauffage</option>
+                  </optgroup>
+                  <optgroup label="sanitaires">
+                    <option value="fuite">fuite d'eau</option>
+                    <option value="materiaux">robinnet</option>
+                    <option value="evacuations">chasse d'eau</option>
+                  </optgroup>
+                </select> <br>
+              </div>
+            </fieldset>
+          </div>
+          <div class="row limite">
+            <fieldset>
+              <div class="col-sm-6 col-md-4">
+                      <legend><span class="number">3. </span>Règlement</legend>
+              </div>
+              <div class="col-xs-6 col-sm-4">
+                      <label>Mode de payement</label><br>
+                      <h5>Ici vous avez à votre disposition plusieurs options à combiner (le cas échéant) en cliquant sur les cases</h5>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <input type="checkbox" id="cheque" value="cheque" name="mode_de_payement"><label class="light"for="cheque">Chèque</label>
+                <input type="checkbox" id="carte_bleu" value="carte_bleu" name="mode_de_payement"><label class="light"for="carte_beu">Carte bleu</label>
+                <input type="checkbox" id="net" value="net" name="mode_de_payement"><label class="light"for="net">Internet</label>
+                <input type="checkbox" id="increments" value="increments" name="mode_de_payement"><label class="light"for="increments">Par tranche</label><br>
+                <!--checkbox allows to select more then 1 option, for instance user can choose the first and the last one  -->
+              </div>
+            </fieldset>
+          </div>
+            <button type="submit" class="button">Valider vos informations</button>
+            <!--  Other values for type are: reset (automatically clear our form data when is clicked) and button (in combination with js)-->
+        </form>
+        </main>
+      </section>
+      <!--  section finish here===============================================-->
+    </div>
+  </div>
+  <!--  Class wrap finish here============================================-->
+  <!--  footer strats here================================================-->
+  <footer>
+    <ul>
+      <li>Plomberie de la Victoire</li>
+      <li class="m-r-0 hidden-sm-down">Téléphone:  03 62 55 26 30</li>
+      <li class="nav-item"><a class="nav-link active" href="formulaire.html">Formulaire<span class="sr-only">(current)</span></a></li>
+      <li><img src="img/rsz_certificat.jpg" alt="certificat RGE Qualibat" class="m-r-0 hidden-xs-down"></li>
+    </ul>
+    <h4 class="flash hidden-sm-down">ACTIVIT&Eacute;S</h4>
+    <ul class="hidden-sm-down">
+      <li>Remplacement ballon</li>
+      <li>Raccordement gaz</li>
+      <li>Entretien et remplacement</li>
+    </ul>
+      <p class="flash">&copy; 2016 Simon Mboma</p>
+  </footer>
+  <!--  footer finish here================================================-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script>
+      window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')
+  </script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+      (function(b, o, i, l, e, r) {
+          b.GoogleAnalyticsObject = l;
+          b[l] || (b[l] =
+              function() {
+                  (b[l].q = b[l].q || []).push(arguments)
+              });
+          b[l].l = +new Date;
+          e = o.createElement(i);
+          r = o.getElementsByTagName(i)[0];
+          e.src = 'https://www.google-analytics.com/analytics.js';
+          r.parentNode.insertBefore(e, r)
+      }(window, document, 'script', 'ga'));
+      ga('create', 'UA-XXXXX-X', 'auto');
+      ga('send', 'pageview');
+  </script>
+</body>
+</html>

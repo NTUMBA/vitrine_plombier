@@ -103,44 +103,28 @@ textarea {
 body{
   text-align: center;
 }
+.plumb-head{
+    background-image: url("../img/complex_fixing.jpg");
+}
 main{
   background-color:darkgray;
 }
 nav{
   width:100%;
 }
-nav .certificat{
-  width: 1rem;
-  margin-top: 0;
-}
 header .flash{
   background-color:#fff8dc;
 }
 /*flexbox=======================================================================*/
-nav,footer ul{
+.navbar-nav, ul{
   display: flex;
   justify-content: space-around;
-
-}
-nav,ul{
-  flex-grow: 1;
 }
 
-.container{
-        color:white;
-}
-/*contact a_propos and mention=======================================================================*/
-.container,.about{
-  background-image: url("../img/complex_fixing.png");
-  background-size: cover;
-
-}
 /*a_propos======================================================================*/
 .about{
   color: lawngreen;
 }
-
-
 /*pseudo classes================================================================*/
 a:hover{
   text-align: justify;
@@ -176,10 +160,8 @@ a{
 }
 section{
 
-      color:mediumvioletred;
-      margin:7% auto 0 auto;
-}
-section,.container{
+  color:mediumvioletred;
+  margin:0 auto;
   text-align: center;
   font-weight: bold;
     Width:80%;
@@ -194,9 +176,6 @@ section,.container{
 .size,.title_teint{
   font-size: 3rem;
   font-weight: bold;
-}
-.wrap{
-  background-image: url("img/fixing_plump_4.png" alt="douche");
 }
 .slogan{
   font-family: Lucida,Arial,sans-serif;
@@ -227,17 +206,20 @@ section,.container{
   width: 8%;
 }*/
 
-/*footerr========================================================================*/
+/*footer========================================================================*/
 
 footer{
-  margin-top: 0;
+  padding-top: 10px;
   background-color: #f3f3f3;
 }
 
 footer .flash{
   color:royalblue;
 }
-
+/*contact=======================================================================*/
+/*footer .contact_marg{
+  margin-top: -35px;
+}*/
 /*formulaire====================================================================*/
 .info{
   /*border: 4px solid black;*/
@@ -267,22 +249,19 @@ section .limite{
 
   .wrapper {
     margin: 25% 10% 0% 25%;
-
   }
-
-
 }
+/*###########################mobile######################################*/
 
 /* ##################################################################### */
 /* ############################   TABLETS   ############################ */
-/* ##################################################################### */
+/* ##################################################################### *
 /* Small devices (tablets, 769px and up) */
    @media (min-width: 769px) {
      .wrap{
-       min-height:100vh;
-
-
+       min-height:calc(100vh - 180px);
      }
+   }
      .wrapper {
        margin-top: 10%;
      }
