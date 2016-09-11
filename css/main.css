@@ -112,6 +112,9 @@ main{
 nav{
   width:100%;
 }
+header{
+    color: #EFE687;
+}
 header .flash{
   background-color:#fff8dc;
 }
@@ -121,10 +124,6 @@ header .flash{
   justify-content: space-around;
 }
 
-/*a_propos======================================================================*/
-.about{
-  color: lawngreen;
-}
 /*pseudo classes================================================================*/
 a:hover{
   text-align: justify;
@@ -153,29 +152,22 @@ p,li,a{
 }
 li{
   list-style: none;
-    color: mediumvioletred;
 }
-a{
-    color: orangered;
+li,a{
+    color: #F4F4F4;
 }
 section{
-
-  color:mediumvioletred;
+  color:#EFE687;
   margin:0 auto;
   text-align: center;
   font-weight: bold;
-    Width:80%;
-    text-align: center;
+  Width:80%;
+  text-align: center;
 }
 .size{
-  color: yellow;
-}
-.title_teint{
-  color:lime;
-}
-.size,.title_teint{
   font-size: 3rem;
   font-weight: bold;
+  color: yellow;
 }
 .slogan{
   font-family: Lucida,Arial,sans-serif;
@@ -210,11 +202,11 @@ section{
 
 footer{
   padding-top: 10px;
-  background-color: #f3f3f3;
+  background-color: #2A2A2A;
 }
 
-footer .flash{
-  color:royalblue;
+footer .flash,.title_teint{
+  color:#5A8B7D;
 }
 /*contact=======================================================================*/
 /*footer .contact_marg{
