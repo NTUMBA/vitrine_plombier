@@ -249,9 +249,9 @@ section .limite{
 /* ############################   TABLETS   ############################ */
 /* ##################################################################### *
 /* Small devices (tablets, 769px and up) */
-   @media (min-width: 769px) {
+   @media (min-width: 544px) {
      .wrap{
-       min-height:calc(100vh - 180px);
+       min-height:calc(100vh - 119px);
      }
    }
      .wrapper {
